@@ -1,6 +1,6 @@
 🚦 Smart Traffic Light  (Raspberry Pi Pico)
 
-This project transforms a Raspberry Pi Pico into an intelligent traffic management system. It simulates a standard intersection cycle using **Red, Yellow, and Green LEDs**, while adding real-world complexity with a **pedestrian crossing button**.
+This project transforms a Raspberry Pi Pico into an intelligent traffic management system. It simulates a standard intersection cycle using **Red, Yellow, and Green LEDs**, while adding real-world complexity with a **pedestrian crossing button**. 
 
 ## 📝 Project Description
 Unlike a basic timer-based light, this setup utilizes **Hardware Interrupts (IRQ)**. This allows the Pico to "listen" for a button press on GP16 even while the main code is running. To ensure the system remains responsive, the code uses a **non-blocking sleep method**—checking the "pedestrian flag" every 100ms rather than pausing entirely for five seconds.
