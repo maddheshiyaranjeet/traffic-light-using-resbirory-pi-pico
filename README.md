@@ -5,7 +5,7 @@ This project transforms a Raspberry Pi Pico into an intelligent traffic manageme
 ## 📝 Project Description
 Unlike a basic timer-based light, this setup utilizes **Hardware Interrupts (IRQ)**. This allows the Pico to "listen" for a button press on GP16 even while the main code is running. To ensure the system remains responsive, the code uses a **non-blocking sleep method**—checking the "pedestrian flag" every 100ms rather than pausing entirely for five seconds.
 
-The system mimics real-world safety by completing a shortened "Green" phase before transitioning safely to "Yellow" and "Red" once a crossing is requested.
+The system mimics real-world safety by completing a shortened "Green" phase before transitioning safely to "Yellow" and "Red" once a crossing is requested. 
 
 ## ✨ Features
 *   **Standard Cycle:** Red (7s) → Green (5s) → Yellow (2s).
